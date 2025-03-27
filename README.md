@@ -50,6 +50,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Datensatz_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator (Kap. 4.3, ca. 2000 Beispiele).
 
+**Datensatz_Leserichtung_grey**: Datensatz von gelabelten Abbildungen von Inschriften zur Bestimmung der Links-Rechts-Leserichtung (Kap. 4.4). 
+
 
 ## Abschnitt *src*
 **Klassifikator Datensatz und Training.ipynb**:
