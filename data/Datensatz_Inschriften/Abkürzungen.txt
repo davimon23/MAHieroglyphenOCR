@@ -1,0 +1,9 @@
+GOD: Gemeißelt ohne Details
+GMD: Gemeißelt mit Details
+HS: Handschrift
+CG: Computergeneriert
+HR: Hieratisch
+ME: Museo Egizio
+MET: Metropolitan Museum
+BM: British Museum
+LIT: Literatur
