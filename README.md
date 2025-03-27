@@ -2,7 +2,7 @@
 
 Dieses Git-Repository beinhaltet alle relevanten Daten zur Masterarbeit *"Maschinelle Erkennung Altägyptischer Hieroglyphen - Vom Bild zu maschinenlesbarem Text"* von David Konieczny aus dem Jahr 2025.
 
-Es stellt alle Datensätze im zip-Format sowie jeglichen Programmiercode in Form von Jupyter-Notebooks bereit.
+Es stellt alle Datensätze sowie jeglichen relevanten Programmiercode in Form von Jupyter-Notebooks bereit.
 
 Citation: 
 Konieczny, D. (2025). *Maschinelle Erkennung Altägyptischer Hieroglyphen - Vom Bild zu maschinenlesbarem Text*. Masterarbeit, FernUniversität in Hagen.
