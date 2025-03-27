@@ -26,6 +26,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Hieroglyphen_Ranking.csv**: Ranking der Hieroglyphen nach Anzahl in der Aufstellung von Werning.
 
+**klassen_anzahlen_Klassifikator.xlsx**: Ranking der Klassen bzgl. der Summe (SUM) ihrer Beispiele im finalen Datensatz vor Data Augmentation.
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
