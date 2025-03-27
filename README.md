@@ -2,7 +2,7 @@
 
 Dieses Git-Repository beinhaltet alle relevanten Daten zur Masterarbeit *"Maschinelle Erkennung Altägyptischer Hieroglyphen - Vom Bild zu maschinenlesbarem Text"* von David Konieczny aus dem Jahr 2025.
 
-Es stellt alle Datensätze im zip-Format sowie jeglichen Programmiercode in Form von Jupyter-Notebooks bereit.
+Es stellt alle Datensätze sowie jeglichen relevanten Programmiercode in Form von Jupyter-Notebooks bereit.
 
 Citation: 
 Konieczny, D. (2025). *Maschinelle Erkennung Altägyptischer Hieroglyphen - Vom Bild zu maschinenlesbarem Text*. Masterarbeit, FernUniversität in Hagen.
@@ -18,3 +18,9 @@ Bibtex:
   type         = {Masterarbeit},
 }
 ```
+
+
+## Abschnitt *data*
+**unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
+
+**unicode_gardinercodes_kurz.csv**: Gekürzte Version der vorherigen Liste.
