@@ -48,6 +48,7 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Datensatz_Final**: Finaler Datensatz (vor Data Augmentation) für den Klassifikator (Kap. 4.3).
 
+**Datensatz_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator (Kap. 4.3, ca. 2000 Beispiele).
 
 
 ## Abschnitt *src*
