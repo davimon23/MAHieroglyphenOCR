@@ -56,7 +56,12 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 
 ## Abschnitt *src*
-**Klassifikator Datensatz und Training.ipynb**:
+**Klassifikator_Datensatz_und_Training_Git.ipynb**:
 
-In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Hieroglyphen und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+
+**Klassifikator_Leserichtung_Datensatz_und_Training_Git.ipynb**:
+
+In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+
 
