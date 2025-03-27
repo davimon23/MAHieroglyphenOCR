@@ -48,9 +48,11 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Datensatz_Final**: Finaler Datensatz (vor Data Augmentation) für den Klassifikator (Kap. 4.3).
 
-**Datensatz_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator (Kap. 4.3, ca. 2000 Beispiele).
+**Datensatz_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator des Gardinercodes (Kap. 4.3, ca. 2000 Beispiele).
 
 **Datensatz_Leserichtung_grey**: Datensatz von gelabelten Abbildungen von Inschriften zur Bestimmung der Links-Rechts-Leserichtung (Kap. 4.4). 
+
+**Datensatz_Leserichtung_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator der Links-Rechts-Leserichtung (Kap. 4.4, ca. 80 Beispiele).
 
 
 ## Abschnitt *src*
