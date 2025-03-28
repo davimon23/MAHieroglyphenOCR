@@ -73,3 +73,12 @@ In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung 
 **Detectron2_Segmentierer_Training_Git.ipynb**:
 In Google Colab lauffähiges Jupyter Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält. 
 
+**YOLO11n_Leserichtung.pt**: YOLO-Modell für die Klassifikation der Links-Rechts-Leserichtung.
+
+**YOLO_Leserichtung.txt**: Daten zum Verlauf des Modelltrainings zu YOLO11n_Leserichtung.pt und die automatisch ermittelten Evaluationsergebnisse.
+
+**segm_4000_512_01_train.txt**: Daten zum Verlauf des Modelltrainings zum Detectron2-Modell segm_4000_512_01.
+
+**segm_4000_512_01_test.txt**: Ergebnisse des COCO-Evaluators für das Detectron2-Modell segm_4000_512_01.
+
+**segm_4000_512_01**: Detectron2-Modell für die Segmentierung der Hieroglyphen.
