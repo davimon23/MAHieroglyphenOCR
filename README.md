@@ -70,4 +70,6 @@ In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung 
 
 In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
 
+**Detectron2_Segmentierer_Training_Git.ipynb**:
+In Google Colab lauffähiges Jupyter Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält. 
 
