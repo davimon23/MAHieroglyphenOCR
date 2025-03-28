@@ -1,0 +1,80 @@
+[03/01 09:12:03 d2.evaluation.coco_evaluation]: Fast COCO eval is not built. Falling back to official COCO eval.
+[03/01 09:12:04 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[03/01 09:12:04 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[03/01 09:12:04 d2.data.common]: Serializing 17 elements to byte tensors and concatenating them all ...
+[03/01 09:12:05 d2.data.common]: Serialized dataset takes 0.98 MiB
+[03/01 09:12:05 d2.evaluation.evaluator]: Start inference on 17 batches
+[03/01 09:12:19 d2.evaluation.evaluator]: Inference done 1/17. Dataloading: 0.3377 s/iter. Inference: 13.4851 s/iter. Eval: 0.1777 s/iter. Total: 14.0019 s/iter. ETA=0:03:44
+[03/01 09:12:26 d2.evaluation.evaluator]: Inference done 2/17. Dataloading: 0.1702 s/iter. Inference: 10.5660 s/iter. Eval: 0.0931 s/iter. Total: 10.8315 s/iter. ETA=0:02:42
+[03/01 09:12:51 d2.evaluation.evaluator]: Inference done 3/17. Dataloading: 0.1148 s/iter. Inference: 14.6161 s/iter. Eval: 0.6541 s/iter. Total: 15.3868 s/iter. ETA=0:03:35
+[03/01 09:13:14 d2.evaluation.evaluator]: Inference done 4/17. Dataloading: 0.0870 s/iter. Inference: 16.2025 s/iter. Eval: 1.0450 s/iter. Total: 17.3362 s/iter. ETA=0:03:45
+[03/01 09:13:37 d2.evaluation.evaluator]: Inference done 5/17. Dataloading: 0.0702 s/iter. Inference: 17.2880 s/iter. Eval: 1.1721 s/iter. Total: 18.5320 s/iter. ETA=0:03:42
+[03/01 09:14:00 d2.evaluation.evaluator]: Inference done 6/17. Dataloading: 0.0000 s/iter. Inference: 20.2328 s/iter. Eval: 2.2190 s/iter. Total: 22.4518 s/iter. ETA=0:04:06
+[03/01 09:14:22 d2.evaluation.evaluator]: Inference done 7/17. Dataloading: 0.0017 s/iter. Inference: 20.4449 s/iter. Eval: 1.9432 s/iter. Total: 22.3908 s/iter. ETA=0:03:43
+[03/01 09:14:45 d2.evaluation.evaluator]: Inference done 8/17. Dataloading: 0.0022 s/iter. Inference: 20.7878 s/iter. Eval: 1.8028 s/iter. Total: 22.5938 s/iter. ETA=0:03:23
+[03/01 09:15:08 d2.evaluation.evaluator]: Inference done 9/17. Dataloading: 0.0025 s/iter. Inference: 20.7524 s/iter. Eval: 1.9631 s/iter. Total: 22.7190 s/iter. ETA=0:03:01
+[03/01 09:15:30 d2.evaluation.evaluator]: Inference done 10/17. Dataloading: 0.0025 s/iter. Inference: 20.6943 s/iter. Eval: 1.8445 s/iter. Total: 22.5426 s/iter. ETA=0:02:37
+[03/01 09:15:36 d2.evaluation.evaluator]: Inference done 11/17. Dataloading: 0.0025 s/iter. Inference: 18.2142 s/iter. Eval: 1.6117 s/iter. Total: 19.8298 s/iter. ETA=0:01:58
+[03/01 09:15:45 d2.evaluation.evaluator]: Inference done 12/17. Dataloading: 0.0033 s/iter. Inference: 16.7967 s/iter. Eval: 1.3841 s/iter. Total: 18.1857 s/iter. ETA=0:01:30
+[03/01 09:15:57 d2.evaluation.evaluator]: Inference done 13/17. Dataloading: 0.0034 s/iter. Inference: 16.1980 s/iter. Eval: 1.2125 s/iter. Total: 17.4153 s/iter. ETA=0:01:09
+[03/01 09:16:16 d2.evaluation.evaluator]: Inference done 14/17. Dataloading: 0.0033 s/iter. Inference: 16.4022 s/iter. Eval: 1.2157 s/iter. Total: 17.6226 s/iter. ETA=0:00:52
+[03/01 09:16:39 d2.evaluation.evaluator]: Inference done 15/17. Dataloading: 0.0032 s/iter. Inference: 16.9250 s/iter. Eval: 1.2735 s/iter. Total: 18.2031 s/iter. ETA=0:00:36
+[03/01 09:17:01 d2.evaluation.evaluator]: Inference done 16/17. Dataloading: 0.0032 s/iter. Inference: 17.1794 s/iter. Eval: 1.2993 s/iter. Total: 18.4833 s/iter. ETA=0:00:18
+[03/01 09:17:23 d2.evaluation.evaluator]: Inference done 17/17. Dataloading: 0.0032 s/iter. Inference: 17.5089 s/iter. Eval: 1.3147 s/iter. Total: 18.8281 s/iter. ETA=0:00:00
+[03/01 09:17:23 d2.evaluation.evaluator]: Total inference time: 0:03:46.077131 (18.839761 s / iter per device, on 1 devices)
+[03/01 09:17:23 d2.evaluation.evaluator]: Total inference pure compute time: 0:03:30 (17.508867 s / iter per device, on 1 devices)
+[03/01 09:17:23 d2.evaluation.coco_evaluation]: Preparing results for COCO format ...
+[03/01 09:17:23 d2.evaluation.coco_evaluation]: Saving results to ./output/coco_instances_results.json
+[03/01 09:17:23 d2.evaluation.coco_evaluation]: Evaluating predictions with official COCO API...
+Loading and preparing results...
+DONE (t=0.01s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=44.48s).
+Accumulating evaluation results...
+DONE (t=0.05s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.631
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.908
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.787
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.510
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.637
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.744
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.024
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.680
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.588
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.683
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.785
+[03/01 09:18:08 d2.evaluation.coco_evaluation]: Evaluation results for bbox: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 63.124 | 90.806 | 78.737 | 51.012 | 63.730 | 74.415 |
+Loading and preparing results...
+DONE (t=0.06s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *segm*
+DONE (t=44.09s).
+Accumulating evaluation results...
+DONE (t=0.05s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.624
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.908
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.772
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.471
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.631
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.742
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.024
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.675
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.678
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.775
+[03/01 09:18:52 d2.evaluation.coco_evaluation]: Evaluation results for segm: 
+|   AP   |  AP50  |  AP75  |  APs   |  APm   |  APl   |
+|:------:|:------:|:------:|:------:|:------:|:------:|
+| 62.368 | 90.805 | 77.227 | 47.056 | 63.050 | 74.195 |
+OrderedDict([('bbox', {'AP': 63.1238862311006, 'AP50': 90.80636869921686, 'AP75': 78.73652306795263, 'APs': 51.01167462817591, 'APm': 63.730143317334566, 'APl': 74.41465866884329}), ('segm', {'AP': 62.36803893382121, 'AP50': 90.80514822160454, 'AP75': 77.2271835969786, 'APs': 47.05584042459397, 'APm': 63.050121617881636, 'APl': 74.19507481537336})])
+
