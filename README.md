@@ -54,6 +54,12 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Datensatz_Leserichtung_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator der Links-Rechts-Leserichtung (Kap. 4.4, ca. 80 Beispiele).
 
+**Quellen_Gardinercodes.xlsx**: Tabelle mit einen Auszug des TLA. Jeder Eintrag besteht aus dem Namen der Inschrift, dem Corpus-Präfix (Name der jeweiligen JSON-Datei), einer Übersetzung, Transkription, Gardiner-Sequenz und ggf. einer Information bzgl. einer Quelle für eine Abbildung der Inschrift.
+
+**Datensatz_Gesamtprozess.csv**: Teilauszug aus Quellen_Gardinercodes.xlsx, der die vorbereiteten Inschriften für die weiteren Tests enthält. Zu jedem Eintrag ist der Name der JPG-Datei im Ordner Datensatz_Gesamtprozess angegeben.
+
+**Datensatz_Gesamtprozess**: Sammlung von Abbildungen von Inschriften. Alle Zusatzinformationen zu den Inschriften sind in Datensatz_Gesamtprozess.csv festgehalten.
+
 
 ## Abschnitt *src*
 **Klassifikator_Datensatz_und_Training_Git.ipynb**:
