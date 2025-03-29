@@ -36,6 +36,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Eingelesene_Bilder_075_03_Labels**: Ordner mit verarbeiteten Bildern, in denen die Bounding Boxen mit den vorhergesagten Codes gelabelt sind.
 
+**Übersetzungen.xlsx**: Übersetzungsvergleiche auf tatsächlicher und vorhergesagter Gardiner-Sequenz
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
