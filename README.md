@@ -32,6 +32,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Fehlklassifikationen.xlsx**: Analyseergebnisse zu Fehlklassifikationen in der Konfusionsmatrix confusion_matrix_YOLO11m_15_01_000001.xlsx.
 
+**Gesamtprozess_Auswertung_075_03.xlsx**: Detaillierte Aufstellung über die Analyseergebnisse aller 46 Textausschnitte bei der Ausführung von HieroglyphToGardiner.ipynb.
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
