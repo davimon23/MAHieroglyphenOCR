@@ -1,0 +1,160 @@
+Ultralytics 8.3.84 🚀 Python-3.11.11 torch-2.5.1+cu124 CUDA:0 (NVIDIA L4, 22693MiB)
+engine/trainer: task=classify, mode=train, model=/content/drive/MyDrive/YOLO11m_10_128_01.pt, data=/content/classification_dataset, epochs=5, time=None, patience=100, batch=128, imgsz=224, save=True, save_period=-1, cache=True, device=0, workers=8, project=None, name=train3, exist_ok=False, pretrained=True, optimizer=AdamW, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, multi_scale=False, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, vid_stride=1, stream_buffer=False, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, embed=None, show=False, save_frames=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, show_boxes=True, line_width=None, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=True, opset=None, workspace=None, nms=False, lr0=0.0001, lrf=0.01, momentum=0.937, weight_decay=0.02, warmup_epochs=0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, bgr=0.0, mosaic=1.0, mixup=0.0, copy_paste=0.0, copy_paste_mode=flip, auto_augment=randaugment, erasing=0.4, crop_fraction=1.0, cfg=None, tracker=botsort.yaml, save_dir=runs/classify/train3
+train: /content/classification_dataset/train... found 252772 images in 967 classes ✅ 
+val: /content/classification_dataset/val... found 31561 images in 967 classes ✅ 
+test: /content/classification_dataset/test... found 31593 images in 967 classes ✅ 
+
+                   from  n    params  module                                       arguments                     
+  0                  -1  1      1856  ultralytics.nn.modules.conv.Conv             [3, 64, 3, 2]                 
+  1                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]               
+  2                  -1  1    111872  ultralytics.nn.modules.block.C3k2            [128, 256, 1, True, 0.25]     
+  3                  -1  1    590336  ultralytics.nn.modules.conv.Conv             [256, 256, 3, 2]              
+  4                  -1  1    444928  ultralytics.nn.modules.block.C3k2            [256, 512, 1, True, 0.25]     
+  5                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  6                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  7                  -1  1   2360320  ultralytics.nn.modules.conv.Conv             [512, 512, 3, 2]              
+  8                  -1  1   1380352  ultralytics.nn.modules.block.C3k2            [512, 512, 1, True]           
+  9                  -1  1    990976  ultralytics.nn.modules.block.C2PSA           [512, 512, 1]                 
+ 10                  -1  1   1896647  ultralytics.nn.modules.head.Classify         [512, 967]                    
+YOLO11m-cls summary: 106 layers, 11,591,943 parameters, 11,591,943 gradients, 40.6 GFLOPs
+Transferred 296/296 items from pretrained weights
+TensorBoard: Start with 'tensorboard --logdir runs/classify/train3', view at http://localhost:6006/
+AMP: running Automatic Mixed Precision (AMP) checks...
+AMP: checks passed ✅
+WARNING ⚠️ Classification `cache_ram` training has known memory leak in https://github.com/ultralytics/ultralytics/issues/9824, setting `cache_ram=False`.
+
+train: Scanning /content/classification_dataset/train... 252725 images, 47 corrupt: 100%|██████████| 252725/252725 [00:00<?, ?it/s]
+
+train: WARNING ⚠️ /content/classification_dataset/train/D21/D21_Segment_image_17_120.png: ignoring corrupt image/label: image size (9, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D21/D21_Segment_image_17_120_flipped.png: ignoring corrupt image/label: image size (9, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_aug_0.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_aug_0_flipped.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_aug_1.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_aug_2.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_aug_2_flipped.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D36/D36_Segment_image_17_2128_flipped.png: ignoring corrupt image/label: image size (7, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D53/D53_Segment_image_17_101_aug_3.png: ignoring corrupt image/label: image size (9, 35) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D53/D53_Segment_image_17_101_aug_3_flipped.png: ignoring corrupt image/label: image size (9, 35) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/D53/D53_Segment_image_17_101_aug_4.png: ignoring corrupt image/label: image size (9, 35) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1094_flipped.png: ignoring corrupt image/label: image size (8, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1407.png: ignoring corrupt image/label: image size (8, 33) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1570.png: ignoring corrupt image/label: image size (8, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1570_flipped.png: ignoring corrupt image/label: image size (8, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1817.png: ignoring corrupt image/label: image size (9, 30) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_1817_flipped.png: ignoring corrupt image/label: image size (9, 30) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_598.png: ignoring corrupt image/label: image size (5, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N35/N35_Segment_image_17_598_flipped.png: ignoring corrupt image/label: image size (5, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N37/N37_Segment_image_17_1395_aug_1.png: ignoring corrupt image/label: image size (9, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N37/N37_Segment_image_17_1395_aug_1_flipped.png: ignoring corrupt image/label: image size (9, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N37/N37_Segment_image_17_1395_aug_2.png: ignoring corrupt image/label: image size (9, 30) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/N37/N37_Segment_image_17_1395_aug_2_flipped.png: ignoring corrupt image/label: image size (9, 30) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101.png: ignoring corrupt image/label: image size (9, 34) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_aug_0.png: ignoring corrupt image/label: image size (9, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_aug_0_flipped.png: ignoring corrupt image/label: image size (9, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_aug_1.png: ignoring corrupt image/label: image size (9, 34) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_aug_1_flipped.png: ignoring corrupt image/label: image size (9, 34) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_aug_2_flipped.png: ignoring corrupt image/label: image size (8, 31) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2101_flipped.png: ignoring corrupt image/label: image size (9, 34) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105.png: ignoring corrupt image/label: image size (8, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105_aug_0.png: ignoring corrupt image/label: image size (7, 30) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105_aug_1.png: ignoring corrupt image/label: image size (8, 28) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105_aug_1_flipped.png: ignoring corrupt image/label: image size (8, 28) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105_aug_2.png: ignoring corrupt image/label: image size (7, 29) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/O34/O34_Segment_image_17_2105_flipped.png: ignoring corrupt image/label: image size (8, 32) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946.png: ignoring corrupt image/label: image size (30, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_0_flipped.png: ignoring corrupt image/label: image size (30, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_1.png: ignoring corrupt image/label: image size (30, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_1_flipped.png: ignoring corrupt image/label: image size (30, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_2.png: ignoring corrupt image/label: image size (28, 7) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_3.png: ignoring corrupt image/label: image size (26, 7) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_3_flipped.png: ignoring corrupt image/label: image size (26, 7) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_4.png: ignoring corrupt image/label: image size (28, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_aug_4_flipped.png: ignoring corrupt image/label: image size (28, 8) <10 pixels
+train: WARNING ⚠️ /content/classification_dataset/train/Z3/Z3_Segment_image_17_1946_flipped.png: ignoring corrupt image/label: image size (30, 8) <10 pixels
+
+
+WARNING ⚠️ Classification `cache_ram` training has known memory leak in https://github.com/ultralytics/ultralytics/issues/9824, setting `cache_ram=False`.
+
+val: Scanning /content/classification_dataset/val... 31558 images, 3 corrupt: 100%|██████████| 31558/31558 [00:00<?, ?it/s]
+
+val: WARNING ⚠️ /content/classification_dataset/val/N35/N35_Segment_image_17_1094.png: ignoring corrupt image/label: image size (8, 31) <10 pixels
+val: WARNING ⚠️ /content/classification_dataset/val/O34/O34_Segment_image_17_2101_aug_2.png: ignoring corrupt image/label: image size (8, 31) <10 pixels
+val: WARNING ⚠️ /content/classification_dataset/val/Z3/Z3_Segment_image_17_1946_aug_2_flipped.png: ignoring corrupt image/label: image size (28, 7) <10 pixels
+
+
+optimizer: AdamW(lr=0.0001, momentum=0.937) with parameter groups 49 weight(decay=0.0), 50 weight(decay=0.04), 50 bias(decay=0.0)
+TensorBoard: model graph visualization added ✅
+Image sizes 224 train, 224 val
+Using 8 dataloader workers
+Logging results to runs/classify/train3
+Starting training for 5 epochs...
+
+      Epoch    GPU_mem       loss  Instances       Size
+
+        1/5      5.02G     0.1442         53        224: 100%|██████████| 1975/1975 [06:57<00:00,  4.73it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:16<00:00,  7.46it/s]
+
+                   all      0.966      0.998
+
+      Epoch    GPU_mem       loss  Instances       Size
+
+        2/5      5.19G      0.137         53        224: 100%|██████████| 1975/1975 [06:53<00:00,  4.77it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:16<00:00,  7.42it/s]
+
+                   all      0.968      0.998
+
+      Epoch    GPU_mem       loss  Instances       Size
+
+        3/5      5.19G     0.1317         53        224: 100%|██████████| 1975/1975 [06:59<00:00,  4.71it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:16<00:00,  7.43it/s]
+
+                   all      0.969      0.998
+
+      Epoch    GPU_mem       loss  Instances       Size
+
+        4/5      5.19G      0.128         53        224: 100%|██████████| 1975/1975 [06:57<00:00,  4.73it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:16<00:00,  7.50it/s]
+
+                   all       0.97      0.998
+
+
+
+      Epoch    GPU_mem       loss  Instances       Size
+
+        5/5      5.19G     0.1272         53        224: 100%|██████████| 1975/1975 [06:58<00:00,  4.72it/s]
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:16<00:00,  7.51it/s]
+
+                   all       0.97      0.999
+
+5 epochs completed in 0.606 hours.
+Optimizer stripped from runs/classify/train3/weights/last.pt, 23.4MB
+Optimizer stripped from runs/classify/train3/weights/best.pt, 23.4MB
+
+Validating runs/classify/train3/weights/best.pt...
+Ultralytics 8.3.84 🚀 Python-3.11.11 torch-2.5.1+cu124 CUDA:0 (NVIDIA L4, 22693MiB)
+YOLO11m-cls summary (fused): 57 layers, 11,580,359 parameters, 0 gradients, 40.3 GFLOPs
+train: /content/classification_dataset/train... found 252772 images in 967 classes ✅ 
+val: /content/classification_dataset/val... found 31561 images in 967 classes ✅ 
+test: /content/classification_dataset/test... found 31593 images in 967 classes ✅ 
+
+               classes   top1_acc   top5_acc: 100%|██████████| 124/124 [00:15<00:00,  8.25it/s]
+
+                   all       0.97      0.999
+Speed: 0.1ms preprocess, 0.4ms inference, 0.0ms loss, 0.0ms postprocess per image
+Results saved to runs/classify/train3
+
+ultralytics.utils.metrics.ClassifyMetrics object with attributes:
+
+confusion_matrix: <ultralytics.utils.metrics.ConfusionMatrix object at 0x7b0d02adc5d0>
+curves: []
+curves_results: []
+fitness: 0.9841403067111969
+keys: ['metrics/accuracy_top1', 'metrics/accuracy_top5']
+results_dict: {'metrics/accuracy_top1': 0.9697699546813965, 'metrics/accuracy_top5': 0.9985106587409973, 'fitness': 0.9841403067111969}
+save_dir: PosixPath('runs/classify/train3')
+speed: {'preprocess': 0.057182703054707254, 'inference': 0.4036597067621223, 'loss': 6.239603278284994e-05, 'postprocess': 0.00013897968804886917}
+task: 'classify'
+top1: 0.9697699546813965
+top5: 0.9985106587409973
+
