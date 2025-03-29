@@ -74,14 +74,14 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 ## Abschnitt *src*
 **Klassifikator_Datensatz_und_Training_Git.ipynb**:
 
-In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Hieroglyphen und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Hieroglyphen und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
 
 **Klassifikator_Leserichtung_Datensatz_und_Training_Git.ipynb**:
 
-In Google Colab lauffähiges Jupyter Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
 
 **Detectron2_Segmentierer_Training_Git.ipynb**:
-In Google Colab lauffähiges Jupyter Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält. 
+In Google Colab lauffähiges Python Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält. 
 
 **YOLO11n_Leserichtung.pt**: YOLO-Modell für die Klassifikation der Links-Rechts-Leserichtung.
 
@@ -96,3 +96,6 @@ In Google Colab lauffähiges Jupyter Notebook, das den Code für das Modelltrain
 **YOLO11m_15_01_000001.pt**: YOLO-Modell für die Klassifikation der Hieroglyphen bzgl. Gardiner-Code.
 
 **YOLO11m_15_128_01_000001.txt**: Daten zum Verlauf des Modelltrainings zu YOLO11m_15_01_000001.pt und die automatisch ermittelten Evaluationsergebnisse.
+
+**HieroglyphToGardiner_Git.ipynb**: In Google Colab lauffähiges Python Notebook, das den Code für die Hauptanwendung, die eine Abbildung einer hieroglyphischen Inschrift in eine Gardinersequenz überführt, enthält. Optional kann darin zudem noch die Übersetzung nach De Cao et al. (2024) ausgeführt werden. 
+
