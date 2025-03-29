@@ -30,6 +30,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **confusion_matrix_YOLO11m_15_01_000001.xlsx**: Konfusionsmatrix zur Evaluation von YOLO11m_15_01_000001.pt auf einem Testdatensatz.
 
+**Fehlklassifikationen.xlsx**: Analyseergebnisse zu Fehlklassifikationen in der Konfusionsmatrix confusion_matrix_YOLO11m_15_01_000001.xlsx.
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
