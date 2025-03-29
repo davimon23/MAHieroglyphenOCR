@@ -34,6 +34,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **Gesamtprozess_Auswertung_075_03.xlsx**: Detaillierte Aufstellung über die Analyseergebnisse aller 46 Textausschnitte bei der Ausführung von HieroglyphToGardiner.ipynb.
 
+**Eingelesene_Bilder_075_03_Labels**: Ordner mit verarbeiteten Bildern, in denen die Bounding Boxen mit den vorhergesagten Codes gelabelt sind.
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
