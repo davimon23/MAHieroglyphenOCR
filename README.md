@@ -28,6 +28,8 @@ Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_i
 
 **klassen_anzahlen_Klassifikator.xlsx**: Ranking der Klassen bzgl. der Summe (SUM) ihrer Beispiele im finalen Datensatz vor Data Augmentation.
 
+**confusion_matrix_YOLO11m_15_01_000001.xlsx**: Konfusionsmatrix zur Evaluation von YOLO11m_15_01_000001.pt auf einem Testdatensatz.
+
 
 ## Abschnitt *data*
 **unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
