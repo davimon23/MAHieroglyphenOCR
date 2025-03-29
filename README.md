@@ -82,3 +82,7 @@ In Google Colab lauffähiges Jupyter Notebook, das den Code für das Modelltrain
 **segm_4000_512_01_test.txt**: Ergebnisse des COCO-Evaluators für das Detectron2-Modell segm_4000_512_01.
 
 **segm_4000_512_01**: Detectron2-Modell für die Segmentierung der Hieroglyphen.
+
+**YOLO11m_15_01_000001.pt**: YOLO-Modell für die Klassifikation der Hieroglyphen bzgl. Gardiner-Code.
+
+**YOLO11m_15_128_01_000001.txt**: Daten zum Verlauf des Modelltrainings zu YOLO11m_15_01_000001.pt und die automatisch ermittelten Evaluationsergebnisse.
