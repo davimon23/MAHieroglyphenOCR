@@ -19,83 +19,137 @@ Bibtex:
 }
 ```
 
+## Dateien und ihre Beschreibung:
+
 ## Abschnitt *analysis*
-**Verteilung_Git.ipynb**: 
 
-Führt die Verteilungsanalyse auf Basis der CSV-Datei *Werning_D_A-Hieroglyphs_in_TLA_and_PT-20092021-OpenXML(bearbeitet).csv* (Quelle: Daniel A. Werning, Egyptian Hieroglyphic Signs in the Thesaurus Linguae Aegyptiae and in the Pyramid Texts: Evaluation for an Expansion of the Unicode Set, 29. Sept. 2021, OSF, https://osf.io/ys8hj (CC BY-SA 4.0 Int.)) aus.
+**Python Notebooks:**
 
-**Hieroglyphen_Ranking.csv**: Ranking der Hieroglyphen nach Anzahl in der Aufstellung von Werning.
+• Verteilung_Git.ipynb  
+> Führt die Verteilungsanalyse auf Basis der CSV-Datei [*Werning_D_A-Hieroglyphs_in_TLA_and_PT-20092021-OpenXML(bearbeitet).csv*](https://osf.io/ys8hj) (Quelle: Daniel A. Werning, *Egyptian Hieroglyphic Signs in the Thesaurus Linguae Aegyptiae and in the Pyramid Texts: Evaluation for an Expansion of the Unicode Set*, 29. Sept. 2021, OSF, CC BY-SA 4.0 Int.) aus.
 
-**klassen_anzahlen_Klassifikator.xlsx**: Ranking der Klassen bzgl. der Summe (SUM) ihrer Beispiele im finalen Datensatz vor Data Augmentation.
+  
+**CSV/Excel:**
 
-**confusion_matrix_YOLO11m_15_01_000001.xlsx**: Konfusionsmatrix zur Evaluation von YOLO11m_15_01_000001.pt auf einem Testdatensatz.
+• Hieroglyphen_Ranking.csv 
+> Ranking der Hieroglyphen nach Anzahl in der Aufstellung von Werning.
 
-**Fehlklassifikationen.xlsx**: Analyseergebnisse zu Fehlklassifikationen in der Konfusionsmatrix confusion_matrix_YOLO11m_15_01_000001.xlsx.
+• klassen_anzahlen_Klassifikator.xlsx
+> Ranking der Klassen hinsichtlich der Summe (SUM) ihrer Beispiele im finalen Datensatz vor der Data Augmentation.
 
-**Gesamtprozess_Auswertung_075_03.xlsx**: Detaillierte Aufstellung über die Analyseergebnisse aller 46 Textausschnitte bei der Ausführung von HieroglyphToGardiner.ipynb.
+• confusion_matrix_YOLO11m_15_01_000001.xlsx 
+> Konfusionsmatrix zur Evaluation des Modells *YOLO11m_15_01_000001.pt* auf einem Testdatensatz.
 
-**Eingelesene_Bilder_075_03_Labels**: Ordner mit verarbeiteten Bildern, in denen die Bounding Boxen mit den vorhergesagten Codes gelabelt sind.
+• Fehlklassifikationen.xlsx
+> Analyseergebnisse zu Fehlklassifikationen in der Konfusionsmatrix *confusion_matrix_YOLO11m_15_01_000001.xlsx*.
 
-**Übersetzungen.xlsx**: Übersetzungsvergleiche auf tatsächlicher und vorhergesagter Gardiner-Sequenz
+• Gesamtprozess_Auswertung_075_03.xlsx 
+> Detaillierte Aufstellung der Analyseergebnisse aller 46 Textausschnitte bei der Ausführung von *HieroglyphToGardiner.ipynb*.
+
+• Übersetzungen.xlsx 
+> Übersetzungsvergleiche auf tatsächlicher und vorhergesagter Gardiner-Sequenz.
+  
+**Ordner:**
+
+• Eingelesene_Bilder_075_03_Labels
+> Ordner mit verarbeiteten Bildern, in denen die Bounding-Boxen mit den vorhergesagten Codes gelabelt sind.
+
+
+
 
 
 ## Abschnitt *data*
-**unicode_gardinercodes.csv**: Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
 
-**unicode_gardinercodes_kurz.csv**: Gekürzte Version der vorherigen Liste.
+**CSV/Excel:**
 
-**Datensatz_Inschriften**: Sammlung von Bildern von Inschriften/hieroglyphischen Texten (Kap. 4.1).
+• unicode_gardinercodes.csv
+> Liste der 1072 Gardiner-Codes im Block der Standardhieroglyphen.
 
-**Trainingsdatensatz_Segmentierer**: Sammlung von annotierten Bildern von Inschriften/hieroglyphischen Texten für das Training des Segmentierers (Kap. 4.2).
+• unicode_gardinercodes_kurz.csv 
+> Gekürzte Version der vorherigen Liste.
 
-**Testdatensatz_Segmentierer**: Sammlung von annotierten Bildern von Inschriften/hieroglyphischen Texten für das Testing des Segmentierers (Kap. 4.2).
+• Quellen_Gardinercodes.xlsx
+> Tabelle mit einen Auszug des TLA. Jeder Eintrag besteht aus dem Namen der Inschrift, dem Corpus-Präfix (Name der jeweiligen JSON-Datei), einer Übersetzung, Transkription, Gardiner-Sequenz und ggf. einer Information bzgl. einer Quelle für eine Abbildung der Inschrift.
 
-**Datensatz_Fonts**: Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die aus Fonts generiert wurden.
+• Datensatz_Gesamtprozess.csv
+> Teilauszug aus Quellen_Gardinercodes.xlsx, der die vorbereiteten Inschriften für die weiteren Tests enthält. Zu jedem Eintrag ist der Name der JPG-Datei im Ordner Datensatz_Gesamtprozess angegeben.
 
-**Annotation_ausgeschnitten**: Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die durch die Annotation der Bilder generiert wurden.
+**Ordner:**
 
-**Manuell_ausgeschnitten**: Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die durch die manuelles Ausschneiden aus dem Wörterbuch von Erman & Grapow generiert wurden.
+• Datensatz_Inschriften 
+> Sammlung von Bildern von Inschriften/hieroglyphischen Texten (Kap. 4.1).
 
-**Datensatz_Final**: Finaler Datensatz (vor Data Augmentation) für den Klassifikator (Kap. 4.3).
+• Trainingsdatensatz_Segmentierer
+> Sammlung von annotierten Bildern von Inschriften/hieroglyphischen Texten für das Training des Segmentierers (Kap. 4.2).
 
-**Datensatz_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator des Gardinercodes (Kap. 4.3, ca. 2000 Beispiele).
+• Testdatensatz_Segmentierer
+> Sammlung von annotierten Bildern von Inschriften/hieroglyphischen Texten für das Testing des Segmentierers (Kap. 4.2).
 
-**Datensatz_Leserichtung_grey**: Datensatz von gelabelten Abbildungen von Inschriften zur Bestimmung der Links-Rechts-Leserichtung (Kap. 4.4). 
+• Datensatz_Fonts
+> Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die aus Fonts generiert wurden.
 
-**Datensatz_Leserichtung_Augmented_Sample**: Stichprobe des angereicherten Datensatzes für den Klassifikator der Links-Rechts-Leserichtung (Kap. 4.4, ca. 80 Beispiele).
+• Annotation_ausgeschnitten
+> Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die durch die Annotation der Bilder generiert wurden.
 
-**Quellen_Gardinercodes.xlsx**: Tabelle mit einen Auszug des TLA. Jeder Eintrag besteht aus dem Namen der Inschrift, dem Corpus-Präfix (Name der jeweiligen JSON-Datei), einer Übersetzung, Transkription, Gardiner-Sequenz und ggf. einer Information bzgl. einer Quelle für eine Abbildung der Inschrift.
+• Manuell_ausgeschnitten
+> Teildatensatz für den Klassifikator (Kap. 4.3) mit den Patches, die durch die manuelles Ausschneiden aus dem Wörterbuch von Erman & Grapow generiert wurden.
 
-**Datensatz_Gesamtprozess.csv**: Teilauszug aus Quellen_Gardinercodes.xlsx, der die vorbereiteten Inschriften für die weiteren Tests enthält. Zu jedem Eintrag ist der Name der JPG-Datei im Ordner Datensatz_Gesamtprozess angegeben.
+• Datensatz_Final
+> Finaler Datensatz (vor Data Augmentation) für den Klassifikator (Kap. 4.3).
 
-**Datensatz_Gesamtprozess**: Sammlung von Abbildungen von Inschriften. Alle Zusatzinformationen zu den Inschriften sind in Datensatz_Gesamtprozess.csv festgehalten.
+• Datensatz_Augmented_Sample
+> Stichprobe des angereicherten Datensatzes für den Klassifikator des Gardinercodes (Kap. 4.3, ca. 2000 Beispiele).
+
+• Datensatz_Leserichtung_grey
+> Datensatz von gelabelten Abbildungen von Inschriften zur Bestimmung der Links-Rechts-Leserichtung (Kap. 4.4). 
+
+• Datensatz_Leserichtung_Augmented_Sample
+> Stichprobe des angereicherten Datensatzes für den Klassifikator der Links-Rechts-Leserichtung (Kap. 4.4, ca. 80 Beispiele).
+
+• Datensatz_Gesamtprozess
+> Sammlung von Abbildungen von Inschriften. Alle Zusatzinformationen zu den Inschriften sind in Datensatz_Gesamtprozess.csv festgehalten.
 
 
 ## Abschnitt *src*
-**Klassifikator_Datensatz_und_Training_Git.ipynb**:
 
-In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Hieroglyphen und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+**Python Notebooks:**
 
-**Klassifikator_Leserichtung_Datensatz_und_Training_Git.ipynb**:
+• Klassifikator_Datensatz_und_Training_Git.ipynb
+> In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Hieroglyphen und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
 
-In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
+• Klassifikator_Leserichtung_Datensatz_und_Training_Git.ipynb
+> In Google Colab lauffähiges Python Notebook, das den Code für die Erstellung des Datensatzes für den Klassifikator der Links-Rechts-Leserichtung und für das YOLO-Modelltraining und die anschließende Evaluation enthält. 
 
-**Detectron2_Segmentierer_Training_Git.ipynb**:
-In Google Colab lauffähiges Python Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält. 
+• Detectron2_Segmentierer_Training_Git.ipynb
+> In Google Colab lauffähiges Python Notebook, das den Code für das Modelltraining der verschiedenen Detectron2-Segmentierer und die anschließende Evaluation enthält.
 
-**YOLO11n_Leserichtung.pt**: YOLO-Modell für die Klassifikation der Links-Rechts-Leserichtung.
+• HieroglyphToGardiner_Git.ipynb
+> In Google Colab lauffähiges Python Notebook, das den Code für die Hauptanwendung, die eine Abbildung einer hieroglyphischen Inschrift in eine Gardinersequenz überführt, enthält. Optional kann darin zudem noch die Übersetzung nach De Cao et al. (2024) ausgeführt werden. 
 
-**YOLO_Leserichtung.txt**: Daten zum Verlauf des Modelltrainings zu YOLO11n_Leserichtung.pt und die automatisch ermittelten Evaluationsergebnisse.
 
-**segm_4000_512_01_train.txt**: Daten zum Verlauf des Modelltrainings zum Detectron2-Modell segm_4000_512_01.
+**Modelle:**
 
-**segm_4000_512_01_test.txt**: Ergebnisse des COCO-Evaluators für das Detectron2-Modell segm_4000_512_01.
+• segm_4000_512_01.pth
+> Detectron2-Modell für die Segmentierung der Hieroglyphen.
 
-**segm_4000_512_01**: Detectron2-Modell für die Segmentierung der Hieroglyphen.
+• YOLO11m_15_01_000001.pt
+> YOLO-Modell für die Klassifikation der Hieroglyphen bzgl. Gardiner-Code.
 
-**YOLO11m_15_01_000001.pt**: YOLO-Modell für die Klassifikation der Hieroglyphen bzgl. Gardiner-Code.
+• YOLO11n_Leserichtung.pt
+> YOLO-Modell für die Klassifikation der Links-Rechts-Leserichtung.
 
-**YOLO11m_15_128_01_000001.txt**: Daten zum Verlauf des Modelltrainings zu YOLO11m_15_01_000001.pt und die automatisch ermittelten Evaluationsergebnisse.
+**TXT-Dateien:**
 
-**HieroglyphToGardiner_Git.ipynb**: In Google Colab lauffähiges Python Notebook, das den Code für die Hauptanwendung, die eine Abbildung einer hieroglyphischen Inschrift in eine Gardinersequenz überführt, enthält. Optional kann darin zudem noch die Übersetzung nach De Cao et al. (2024) ausgeführt werden. 
+• YOLO_Leserichtung.txt
+> Daten zum Verlauf des Modelltrainings zu YOLO11n_Leserichtung.pt und die automatisch ermittelten Evaluationsergebnisse.
+
+• segm_4000_512_01_train.txt
+> Daten zum Verlauf des Modelltrainings zum Detectron2-Modell segm_4000_512_01.
+
+• segm_4000_512_01_test.txt
+> Ergebnisse des COCO-Evaluators für das Detectron2-Modell segm_4000_512_01.
+
+• YOLO11m_15_128_01_000001.txt
+> Daten zum Verlauf des Modelltrainings zu YOLO11m_15_01_000001.pt und die automatisch ermittelten Evaluationsergebnisse.
+
 
